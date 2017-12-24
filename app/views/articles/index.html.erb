@@ -1,11 +1,12 @@
 <strong>Latest Articles</strong>
 <%= render 'articles/pagination' %>
+
 <%= link_to 'New article', new_article_path %>
 <p>
   <table class="table">
     <% @articles.each do |article| %>
       <tr>
-        <td><%= article.title %></td>
+        <td><strong><%= article.title %></strong></td>
       </tr>
       <tr>
         <td><%= article.text %></td>
