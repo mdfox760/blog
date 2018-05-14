@@ -1,9 +1,9 @@
 <strong>Latest Articles</strong>
-<%= render 'articles/pagination' %>
 
-<%= link_to 'New article', new_article_path %>
+<p><%= link_to 'New article', new_article_path %></p>
+
 <p>
-  <table class="table">
+  <table class="table table-sm table-striped">
     <% @articles.each do |article| %>
       <tr>
         <td><strong><%= article.title %></strong></td>
